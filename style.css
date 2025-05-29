@@ -1,0 +1,526 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f3f4f6;
+}
+
+/* About Section */
+.about-text h2 {
+  color: #2e8b57;
+  font-size: 32px;
+  margin-left: 12rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-description p {
+  background-color: #e4efe9;
+  padding: 12px;
+  margin-right: 120px;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.about-description {
+  display: flex;
+  padding: 0rem 12rem 0rem 12rem;
+}
+
+.about {
+  background-color: white;
+  padding: 40px 20px;
+  margin-top: 20px;
+}
+
+.about h2 {
+  color: #2e8b57;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Team Section */
+.about-team {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 12rem;
+  justify-content: flex-start;
+  gap: 8rem;
+}
+
+.team-member {
+  width: 150px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #e4efe9;
+  border-radius: 8px;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.team-member h3 {
+  margin-top: 5px;
+  color: #333;
+  font-size: 12px;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 9px;
+  padding-bottom: 6px;
+  text-align: start;
+  padding-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #15362d;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.footer-container {
+  border-bottom: 1px solid #ffffff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-line {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-logo img {
+  height: 75px;
+  align-items: start;
+}
+
+/* Social Media Styles */
+.social-media {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.social-media a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  color: #f0e68c;
+}
+
+/* Navbar Styles */
+header {
+  background-color: #15362d;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 75px;
+  margin-left: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 8rem;
+}
+
+nav ul li {
+  margin-left: 80px;
+  padding-top: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 5px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* Underline on Hover */
+nav ul li a:hover {
+  border-bottom: 2px solid #ffffff; /* White underline effect */
+}
+
+/* Mobile Hamburger Button */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Active Class for Hamburger */
+nav ul.active {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px 0;
+}
+
+nav ul.active li {
+  margin-left: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+nav ul.active li a {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.social-media-tww {
+  display: flex;
+}
+
+.social-media-tww a {
+  padding-top: 1rem;
+  padding-left: 10px;
+}
+
+/* iPad View Adjustments (For Screens Between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Adjust Navbar for iPad */
+  .navbar .logo img {
+    height: 60px; /* Adjust logo size for iPad */
+    margin-left: 2rem; /* Adjust margin for iPad */
+  }
+  nav ul {
+    display: none;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 0;
+  }
+
+  /* Show Hamburger Button on Mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Mobile Navbar Links */
+  nav ul.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    margin-top: 23px;
+    padding: 20px 0;
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+  nav ul li {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 10px;
+  }
+  /* About Section Layout */
+  .about-text h2 {
+    font-size: 28px;
+    margin-left: 2rem; /* Adjust margin for center alignment */
+    text-align: left;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .about .container .about-description {
+    padding: 0px;
+    display: flex;
+    align-items: center; /* Center content */
+  }
+  .about-description {
+    gap: 15rem;
+  }
+
+  .about-description p {
+    background-color: #e4efe9;
+    padding: 12px;
+    margin-right: 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .about-description img {
+    z-index: 1;
+    width: 220px; /* Ensure image takes full width */
+    height: 150px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px;
+    scale: 2;
+    margin-right: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Team Section Layout */
+  .about-team {
+    display: flex;
+    justify-content: center; /* Center team members */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .team-member {
+    width: 45%; /* Allow 2 items per row */
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #e4efe9;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .team-member h3 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 16px;
+    text-align: start;
+    padding-left: 2px;
+  }
+
+  .team-member p {
+    color: #666;
+    font-size: 12px;
+    padding-bottom: 6px;
+    text-align: start;
+    padding-left: 2px;
+  }
+
+  /* Footer Centering */
+  .footer-container {
+    margin-top: 75px;
+  }
+  .footer-line {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+
+  .footer-logo img {
+    height: 100px; /* Adjust logo size for iPad */
+  }
+
+  /* Social Media Links */
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: center;
+    margin-right: 20rem;
+    margin-left: 20rem;
+  }
+  .social-media-tww {
+    justify-content: center;
+  }
+
+  .social-media-tww a {
+    padding-top: 8px;
+    padding-left: 6px;
+  }
+
+  .social-media-tww .social-media-tw img {
+    width: 80%; /* Adjust size for mobile */
+  }
+
+  /* Email below social media */
+  .footer-email {
+    text-align: center;
+    margin-top: 20px; /* Add some space above the email */
+    font-size: 18px;
+    color: white;
+  }
+}
+
+/* Mobile View Adjustments (For Screens Below 768px) */
+@media (max-width: 768px) {
+  /* Navbar Links for Mobile */
+  nav ul {
+    display: none;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 0;
+  }
+
+  .navbar .logo img {
+    height: 50px; /* Adjust logo size for mobile */
+    margin-left: 2px; /* Adjust margin for mobile */
+  }
+
+  /* Show Hamburger Button on Mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Mobile Navbar Links */
+  nav ul.active {
+    display: block;
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* Adjust About Section for Mobile */
+  .about {
+    padding: 0px; /* Reduce padding for mobile */
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+    margin-left: 2rem;
+  }
+
+  /* About Description */
+  .about-description {
+    display: block;
+    padding: 0; /* Add padding for mobile */
+  }
+
+  .about-description p {
+    margin-right: 0;
+    padding: 12px;
+    margin: 0rem 2rem 2rem 2rem;
+  }
+
+  .about-description img {
+    width: 100%; /* Ensure image takes full width */
+  }
+
+  /* Team Section: Stack Items Vertically */
+  .about-team {
+    margin-left: 0px;
+    margin-right: 0px; /* Add some margin for mobile */
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center team members */
+  }
+
+  .team-member {
+    width: 40%; /* Allow team member to take full width */
+    background-color: #e4efe9;
+    border-radius: 8px;
+  }
+
+  .team-member img {
+    width: 100%; /* Ensure image takes full width */
+    height: auto;
+  }
+
+  /* Footer: Center Items on Mobile */
+  .footer-line {
+    display: block; /* Stack footer items vertically */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .footer-line .social-media {
+    display: flex;
+  }
+
+  .social-media {
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center social media icons */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+
+  .social-media-tww {
+    display: flex;
+    justify-content: center; /* Center social media icons */
+  }
+
+  .social-media-tww a {
+    padding-top: 8px;
+    padding-left: 6px;
+  }
+
+  .social-media-tww .social-media-tw img {
+    width: 80%; /* Adjust size for mobile */
+  }
+}

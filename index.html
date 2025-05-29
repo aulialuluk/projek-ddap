@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AksiGizi - Tentang Kami</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748399123/Untitled73_20250506220807_kgrk0c.svg"
+            alt="Logo"
+          />
+        </div>
+        <nav>
+          <ul id="navbar-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Informasi</a></li>
+            <li><a href="#">Donasi</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="container">
+        <div class="about-text">
+          <h2>Sekilas tentang kami</h2>
+          <div class="about-description">
+            <p>
+              AksiGizi adalah platform daring yang didedikasikan untuk
+              meningkatkan kesadaran publik tentang isu kelaparan. Website ini
+              menyediakan informasi faktual mengenai kelaparan serta
+              solusi-solusi yang dapat diimplementasikan. Selain itu, AksiGizi
+              memfasilitasi donasi secara transparan dan mudah, dengan harapan
+              dapat mendorong partisipasi aktif individu dan komunitas dalam
+              upaya mengurangi kelaparan dan membantu mereka yang membutuhkan.
+            </p>
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748396067/download_3_djxlmw.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="about-team">
+          <div class="team-member">
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748396076/Untitled855_20240820215355_pmxtql.svg"
+              alt="Adelia Swastika Dewi"
+            />
+            <h3>Adelia Swastika Dewi</h3>
+            <p>Komisaris Utama</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748396068/Rectangle_20_oesozq.svg"
+              alt="Aulia Lukikuli Maknun"
+            />
+            <h3>Aulia Lukikuli Maknun</h3>
+            <p>Komisaris Independen</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748396067/WhatsApp_Image_2025-05-06_at_23.45.32_44b473bb_3_axotth.svg"
+              alt="Devi Atika Putri"
+            />
+
+            <h3>Devi Atika Putri</h3>
+            <p>Direktur Utama</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748396068/Rectangle_20_1_ljetr7.svg"
+              alt="Naila Sarah Yunanda"
+            />
+            <h3>Naila Sarah Yunanda</h3>
+            <p>Wakil Direktur Utama</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-line">
+          <div class="footer-logo">
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748399123/Untitled73_20250506220807_kgrk0c.svg"
+              alt=""
+            />
+          </div>
+          <div class="social-media">
+            <div class="social-media-fb">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401296/Facebook_sjxqzc.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-yt">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/Youtube_c5j8oh.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-in">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/Linkedin_ktf3sq.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-ig">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/Instagram_n9d68u.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-tww">
+              <div class="social-media-tw">
+                <img
+                  src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/mail_y3hzkb.svg"
+                  alt=""
+                />
+              </div>
+              <a href="mailto:AksiGizi@gmail.com">AksiGizi@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navbarLinks = document.getElementById("navbar-links");
+
+      hamburger.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
