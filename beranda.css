@@ -1,0 +1,254 @@
+/* Reset dan base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('imageweb/coverhome.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+/* Navbar */
+.navbar a {
+  color: white;
+  margin-left: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Konten */
+.content-section {
+  background-color: #1c3d34;
+  color: white;
+  padding: 60px 20px;
+}
+
+.content-section h1 {
+  color: #a4f2c7;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #a4f2c7;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+.footer-info {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ccc;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons i {
+  color: white;
+  transition: transform 0.3s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+}
+
+.social-icons img.social-icon-img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons img.social-icon-img:hover {
+  transform: scale(1.2);
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid #3e6156;
+  background-color: #1c3d34;
+  flex-wrap: wrap;
+}
+
+.footer-left .logo-small {
+  height: 90px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.email {
+  font-size: 14px;
+  color: #ccc;
+  margin-left: 8px;
+}
+
+/* Default: sembunyikan menu mobile */
+.mobile-header, .mobile-nav {
+  display: none;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px 30px 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+
+  .header, .navbar {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c3d34;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .mobile-logo img {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #1c3d34;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+    padding: 30px 20px;
+  }
+
+  .mobile-nav.open {
+    right: 0;
+  }
+
+  .close-btn {
+    font-size: 26px;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+  }
+
+  .mobile-nav li {
+    margin-bottom: 20px;
+  }
+
+  .mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .footer-left {
+    margin-bottom: 20px;
+  }
+
+  .footer-left .logo-small {
+    height: 70px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email {
+    margin-left: 0;
+  }
+}
