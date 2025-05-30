@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AksiGizi - Tentang Kami</title>
+    <link rel="stylesheet" href="donation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748399123/Untitled73_20250506220807_kgrk0c.svg"
+            alt="Logo"
+          />
+        </div>
+        <nav>
+          <ul id="navbar-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="#">Informasi</a></li>
+            <li><a href="donation.html">Donasi</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </header>
+
+  <section class="hero container">
+    <div class="donation-box">
+      <p>
+        Kontribusi dari Sahabat dapat membantu mengurangi kelaparan, menyediakan makanan bergizi untuk anak-anak, dan menciptakan masa depan Indonesia yang lebih sehat.
+      </p>
+  <div class="amount-options">
+    <button class="amount" data-amount="50000">IDR 50.000,00</button>
+    <button class="amount" data-amount="100000">IDR 100.000,00</button>
+    <button class="amount" data-amount="300000">IDR 300.000,00</button>
+    <input type="number" id="custom-amount" placeholder="Jumlah Lainnya (Rp)" />
+  </div>
+  <button class="donate-button" onclick="submitDonation()">BANTU SEKARANG</button>
+</div>
+
+<div class="hero-image">
+      <img src="img/anak-makan.jpg" alt="anak makan" />
+    </div>
+  </section>
+<section class="why-donate">
+    <h2>MENGAPA HARUS MEMBERI?</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="img/bantu1.jpg" alt="">
+        <p>Membantu Jutaan Anak Indonesia</p>
+      </div>
+      <div class="card">
+        <img src="img/bantu2.jpg" alt="">
+        <p>Mengurangi Angka Kelaparan</p>
+      </div>
+      <div class="card">
+        <img src="img/bantu3.jpg" alt="">
+        <p>Membantu Memberikan Kehidupan yang Layak</p>
+      </div>
+    </div>
+  </section>
+<!-- Ajak Donasi -->
+  <section class="impact">
+    <h3>DONASI ANDA MENYELAMATKAN NYAWA ANAK-ANAK</h3>
+    <img src="img/anak-senyum.jpg" alt="">
+  </section>
+
+<footer>
+      <div class="footer-container">
+        <div class="footer-line">
+          <div class="footer-logo">
+            <img
+              src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748399123/Untitled73_20250506220807_kgrk0c.svg"
+              alt=""
+            />
+          </div>
+          <div class="social-media">
+            <div class="social-media-fb">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401296/Facebook_sjxqzc.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-yt">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/Youtube_c5j8oh.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-in">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/Linkedin_ktf3sq.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-ig">
+              <img
+                src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/Instagram_n9d68u.svg"
+                alt=""
+              />
+            </div>
+            <div class="social-media-tww">
+              <div class="social-media-tw">
+                <img
+                  src="https://res.cloudinary.com/dncuggzvl/image/upload/v1748401295/mail_y3hzkb.svg"
+                  alt=""
+                />
+              </div>
+              <a href="mailto:AksiGizi@gmail.com">AksiGizi@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navbarLinks = document.getElementById("navbar-links");
+
+      hamburger.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
